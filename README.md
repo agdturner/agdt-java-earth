@@ -1,2 +1,2 @@
 # agdt-java-earth
-Java for a model of Earth
+Java for a model of Earth.
