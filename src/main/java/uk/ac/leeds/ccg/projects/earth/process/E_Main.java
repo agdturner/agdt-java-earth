@@ -18,38 +18,28 @@ package uk.ac.leeds.ccg.projects.earth.process;
 import java.io.IOException;
 import uk.ac.leeds.ccg.generic.core.Generic_Environment;
 import uk.ac.leeds.ccg.generic.io.Generic_Defaults;
-import uk.ac.leeds.ccg.grids.core.Grids_Environment;
-import uk.ac.leeds.ccg.grids.process.Grids_ProcessorDEM;
 
 /**
  * For running a model of Earth.
  *
  * @author Andy Turner
- * @version 1.0.0
+ * @version 1.0
  */
-public class E_Main extends Grids_ProcessorDEM {
+public class E_Main {
 
-    private static final long serialVersionUID = 1L;
-
-    public E_Main(Grids_Environment env) throws IOException, Exception {
-        super(env);
+    public E_Main() {
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        try {
-            E_Main t = new E_Main(new Grids_Environment(
-                    new Generic_Environment(new Generic_Defaults())));
-            t.run();
-        } catch (Exception ex) {
-            ex.printStackTrace(System.err);
-        }
+        new E_Main().run();
     }
 
     public void run() {
         try {
+            System.out.println("Hello World");
         } catch (Exception | Error e) {
             e.printStackTrace(System.err);
         }
